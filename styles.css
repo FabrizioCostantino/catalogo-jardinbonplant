@@ -1,3 +1,4 @@
+/* Estilo para la tabla */
 table {
     border-collapse: collapse;
     margin-top: 20px;
@@ -5,7 +6,7 @@ table {
     table-layout: auto; /* Ajusta automáticamente el ancho de las columnas */
 }
 
-
+/* Estilo común para las celdas y encabezados */
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
@@ -28,4 +29,36 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: #ddd;
+}
+
+/* Alineación especial para algunas celdas */
+td.precio {
+    text-align: right;
+}
+
+td.numero {
+    text-align: center;
+}
+
+/* Modificaciones específicas para la celda de la imagen */
+td.imagen {
+    padding: 0; /* Eliminamos el padding en las celdas de la columna imagen */
+    width: 50px;  /* Establecemos el tamaño de la celda a 50px */
+    height: 50px; /* Establecemos el tamaño de la celda a 50px */
+    background-size: cover; /* La imagen cubre el área de la celda */
+    background-position: center; /* La imagen se centra dentro de la celda */
+}
+
+td.imagen a {
+    display: block; /* Hace que el <a> ocupe todo el espacio de la celda */
+    height: 100%; /* Asegura que el <a> ocupe toda la altura de la celda */
+    width: 100%; /* Asegura que el <a> ocupe todo el ancho de la celda */
+    padding: 0; /* Elimina el padding del enlace */
+    margin: 0; /* Elimina el margen del enlace */
+}
+
+td.imagen img {
+    width: 100%;  /* La imagen ocupa todo el ancho de la celda */
+    height: 100%; /* La imagen ocupa todo el alto de la celda */
+    object-fit: cover;  /* La imagen cubre el área sin deformarse */
 }

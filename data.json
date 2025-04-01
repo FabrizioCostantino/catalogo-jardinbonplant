@@ -31,5 +31,16 @@
       "numero": "18",
       "color": "blanca",
       "precio": "$22500"
+    },
+    {
+      "id": 4,
+      "nombre": "Calatea puertorriqueña",
+      "cientifico": "Burle-marxii",
+      "genero": "Ctenanthe",
+      "familia": "Marantáceas",
+      "maceta": "paris",
+      "numero": "18",
+      "color": "beige",
+      "precio": "$75000"
     }
   ]  
