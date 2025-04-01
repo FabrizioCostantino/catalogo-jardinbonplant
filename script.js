@@ -20,3 +20,30 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error al cargar los datos:", error));
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const table = document.querySelector("table");
+    const headers = table.querySelectorAll("th");
+    const tbody = table.querySelector("tbody");
+
+    headers.forEach((header, index) => {
+        header.addEventListener("click", () => {
+            const rows = Array.from(tbody.querySelectorAll("tr"));
+            const isAscending = header.dataset.order === "asc";
+            const direction = isAscending ? -1 : 1;
+
+            header.dataset.order = isAscending ? "desc" : "asc";
+
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.children[index].textContent.trim();
+                const cellB = rowB.children[index].textContent.trim();
+                
+                return isNaN(cellA) || isNaN(cellB) 
+                    ? cellA.localeCompare(cellB) * direction 
+                    : (parseFloat(cellA) - parseFloat(cellB)) * direction;
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        });
+    });
+});
