@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "nombre": "Crotón fideo",
+      "cientifico": "Variegatum",
+      "genero": "Codiaeum",
+      "familia": "Euforbiáceas",
+      "maceta": "facetada",
+      "numero": "16",
+      "color": "blanca",
+      "precio": "$24800"
+    },
+    {
+      "id": 2,
+      "nombre": "Dracena lemon",
+      "cientifico": "Fragrans",
+      "genero": "Dracaena",
+      "familia": "Asparagáceas",
+      "maceta": "facetada",
+      "numero": "16",
+      "color": "arenisca",
+      "precio": "$19500"
+    },
+    {
+      "id": 3,
+      "nombre": "Palo de agua",
+      "cientifico": "Fragrans",
+      "genero": "Dracaena",
+      "familia": "Asparagáceas",
+      "maceta": "premium",
+      "numero": "18",
+      "color": "blanca",
+      "precio": "$22500"
+    }
+  ]  
